@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Chatbot</title>
+<style>
+body { 
+    font-family: Arial; 
+    background:#f4f4f4; 
+}
+#chat { 
+    width:400px; 
+    margin:50px auto; 
+    background:white; 
+    padding:10px; 
+}
+#messages { 
+    height:300px; 
+    overflow-y:auto; 
+    border:1px solid #ccc; 
+    padding:5px; 
+}
+input { 
+    width:80%; 
+    padding:10px; 
+}
+button { 
+    padding:10px; 
+}
+</style>
+</head>
+<body>
+
+<div id="chat">
+<h3>My Chatbot</h3>
+<div id="messages"></div>
+<input id="user" placeholder="Type here..." />
+<button onclick="send()">Send</button>
+</div>
+
+<script src="bot.js"></script>
+
+</body>
+</html>
